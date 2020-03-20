@@ -4,7 +4,7 @@ This simulation can be used to model the spread of the corona virus through any 
 I have yet to make it objected oriented and I understand it's easier, but it's more important for me to create a working simulation right now.
 
 # Goal:
-If we leave the virus unchecked, which places it will hit the hardest.
+If we leave the virus unchecked, which places will it hit the hardest?
 
 # Assumptions for the example below, and in general:
 - It just for Sindh's districts, no neighbouring cities on the border of sindh are involved.
