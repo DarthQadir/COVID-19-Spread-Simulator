@@ -8,7 +8,7 @@ If we leave the virus unchecked, which places it will hit the hardest.
 
 # Assumptions for the example below, and in general:
 - It just for Sindh's districts, no neighbouring cities on the border of sindh are involved.
-- There is no quarantine involved. People infected are allowed to travel. Since I modeled this for Pakistan where I don't believe there are enough testing kits available, I believe this assumption won't make a difference.
+- There is no quarantine involved. People infected are allowed to travel. Since I modeled this for Pakistan where I don't believe there are enough testing kits available, I believe this assumption won't make a difference. I will gladly add the feature if someone wishes me to.
 - Poisson distribution used for rate of spread.
 - Weight of inflow and outflow traffic between cities is the same.
 - Population remains constant (have not modeled death of people due to corona because I don't expect there to be so many deaths to have   an impact on the simulation)
