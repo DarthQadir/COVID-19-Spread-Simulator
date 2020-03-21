@@ -41,7 +41,7 @@ If we leave the virus unchecked, which places will it hit the hardest?
 For the function **simulate day**:
 - **Lambda** = Parameter for the poisson distribution from which we sample how many other people an already infected person spreads the  virus to
 - **recovery** = Parameter to set the recovery rate for the whole simulation
-- **Effect of density** = On line 43, you can change the effect of a district's density by varying the parameters of the normal distribution
+- **Effect of density** = On line 43 (below #Multiplier effect due to density of city), you can change the effect of a district's density by varying the parameters of the normal distribution
 
 
 
