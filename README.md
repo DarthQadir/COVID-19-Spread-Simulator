@@ -8,7 +8,7 @@ If we leave the virus unchecked, which places will it hit the hardest?
 
 # Assumptions for the example below, and in general:
 - It just for Sindh's districts, no neighbouring cities on the border of sindh are involved.
-- There is no quarantine involved. People infected are allowed to travel. Since I modeled this for Pakistan where I don't believe there are enough testing kits available (and hence they are more inclined to travel because they don't know they're infected), I believe this assumption won't make a difference. I will gladly add the feature if someone wishes me to.
+- Quarantine changes the flow of traffic between districts/cities which is normally distributed (in order to remove quarantine, you can vary the parameters of the normal distribution). Quarantine also changes the parameters of the poisson distribution to reduce in-city spread of COVID-19. 
 - Poisson distribution used for rate of spread.
 - Weight of inflow and outflow traffic between cities is the same.
 - Population remains constant (have not modeled death of people due to corona because I don't expect there to be so many deaths to have   an impact on the simulation)
