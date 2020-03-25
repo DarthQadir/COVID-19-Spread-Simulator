@@ -22,6 +22,23 @@ The CSV file has the results from 100 monte carlo simulations, while the results
 - Density affects the rate of spread inside a city.
 - The cases are unconfirmed+confirmed cases. There is no containment involved since the goal is to predict which places will be hit the   hardest.
 
+# How to use?
+
+- The first cell in the Sindh/All-Pakistan notebook is the simulation code. You can copy it to your notebook in a cell and run it to setup the simulation.
+- In another cell, define a function in which you will add all the districts/towns/cities you wish to model.
+- The first line of the function you're defining should be X = nx.Graph() where X is the name of the place you're modeling. This initializes the graph for the region you're modeling.
+- Then use the add_city function from the first cell to add the cities with their respect data. The format is add_city(X, Y, Area, Population, [(Y,'Neighbour',{'weight':abs(norm.rvs(mean,std)})])
+- X = The name of the graph you initialized.
+- Y = String for one of the districts/towns/cities in the region you're modeling.
+- Area = Area of that district/town/city.
+- Population = Population of that district/town/city.
+- Neighbour = String for one of the neighbours of the district/town/city you're adding.
+- mean,std = mean and standard deviation for the weight between the district/town/city and its neighbours (this determines the flow of traffic between those two areas)
+- The format is like this because the networkx library works that way.
+- Add all the cities with this format
+- Use the simulate_day function in which you pass the name of the graph you initialized, the lambda parameter (which determines the inner-city daily spread of corona), and the recovery rate.
+- Use the for loop in the Sindh example as a reference on how to access the number of predicted cases.
+- Ideally, you should run a lot of monte carlo simulations and get the 95% confidence intervals for the predictsion from the model (as show in the CSV file).
 
 
 # In a nutshell explanation (for Sindh)
