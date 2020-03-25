@@ -1,6 +1,4 @@
-# Important note
 
-The CSV file has the results from 100 monte carlo simulations While the results printed at the bottom of the notebook are from a single run.
 
 # COVID-19-Spread-Simulation
 This simulation can be used to model the spread of the corona virus through any adjacent number of cities/districts/towns etc.
@@ -9,6 +7,10 @@ I have yet to make it objected oriented and I understand it's easier, but it's m
 
 # Goal:
 If we leave the virus unchecked, which places will it hit the hardest?
+
+# Important note
+
+The CSV file has the results from 100 monte carlo simulations, while the results printed at the bottom of the notebook are from a single run.
 
 # Assumptions for the example below, and in general:
 - It just for Sindh's districts, no neighbouring cities on the border of sindh are involved.
