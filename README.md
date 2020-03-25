@@ -1,3 +1,7 @@
+# Important note
+
+The CSV file has the results from 100 monte carlo simulations While the results printed at the bottom of the notebook are from a single run.
+
 # COVID-19-Spread-Simulation
 This simulation can be used to model the spread of the corona virus through any adjacent number of cities/districts/towns etc.
 
