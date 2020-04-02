@@ -65,6 +65,7 @@ For the function **simulate day**:
 - **Lambda** = Parameter for the poisson distribution from which we sample how many other people an already infected person spreads the  virus to
 - **recovery** = Parameter to set the recovery rate for the whole simulation
 - **Effect of density** = On line 43 (below #Multiplier effect due to density of city), you can change the effect of a district's density by varying the parameters of the normal distribution
+- **Traffic Flow** = When you add each district, you add a traffic flow parameter between each district and its neighbours. It determines how many people travel between districts everyday.
 
 
 
