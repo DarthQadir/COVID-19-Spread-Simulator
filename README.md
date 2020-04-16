@@ -13,14 +13,14 @@ Predict how the virus will spread through different regions, and how many cases 
 The CSV file has the results from 100 monte carlo simulations, while the results printed at the bottom of the notebook are from a single run.
 
 # Assumptions for the example below, and in general:
-- It just for Sindh's districts, no neighbouring cities on the border of sindh are involved.
+- It just for Sindh's districts, no neighbouring cities on the border of sindh are involved (For the whole country's simulation, there is no international travel involved).
 - Quarantine changes the flow of traffic between districts/cities which is normally distributed (in order to remove quarantine, you can vary the parameters of the normal distribution). Quarantine also changes the parameters of the poisson distribution to reduce in-city spread of COVID-19. 
-- Poisson distribution used for rate of spread.
+- Poisson distribution used for rate of spread (simulated the number of other people infected per day by each person who is infected).
 - Weight of inflow and outflow traffic between cities is the same.
-- Population remains constant (have not modeled death of people due to corona because I don't expect there to be so many deaths to have   an impact on the simulation)
+- Population remains constant (have not modeled death of people due to corona because I don't expect there to be so many deaths to have   a major impact on the simulation)
 - Density = population / area
 - Density affects the rate of spread inside a city.
-- The cases are unconfirmed+confirmed cases. There is no containment involved since the goal is to predict which places will be hit the   hardest.
+- The cases are unconfirmed+confirmed cases. The lambda parameter can be changed to adjust just for the number of confirmed cases.
 
 # How to use?
 
@@ -64,7 +64,7 @@ The CSV file has the results from 100 monte carlo simulations, while the results
 For the function **simulate day**:
 - **Lambda** = Parameter for the poisson distribution from which we sample how many other people an already infected person spreads the  virus to
 - **recovery** = Parameter to set the recovery rate for the whole simulation
-- **Effect of density** = On line 43 (below #Multiplier effect due to density of city), you can change the effect of a district's density by varying the parameters of the normal distribution
+- **Effect of density** = On line 43-ish (below #Multiplier effect due to density of city), you can change the effect of a district's density by varying the parameters of the normal distribution
 - **Traffic Flow** = When you add each district, you add a traffic flow parameter between each district and its neighbours. It determines how many people travel between districts everyday.
 
 
