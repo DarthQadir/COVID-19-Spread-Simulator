@@ -8,6 +8,19 @@ I have yet to make it objected oriented and I understand it's easier, but it's m
 # Goal:
 Predict how the virus will spread through different regions, and how many cases should we expect?
 
+# Results of predictions (26th March to 8th April):
+
+In the gif and image below, you can see the comparison between the predictions my simulation made vs the actual spread of COVID-19 in Pakistan. The official results even consider 1 case as a red dot on the map, which is why I do not have as many dots as my visualization uses a threshold before it forms a dot on the map. However, the my simulation accurately captures the results of major regions affected by COVID-19, even with the minimal data I had.
+
+
+#### Simulation Results (it is a gif, wait for it to fully run) ####
+![](https://media.giphy.com/media/fuEN5WamDdZbQVyM0Z/giphy.gif) 
+
+#### Actual Results ####
+![](https://i.imgur.com/oFGmOIf.png)
+
+
+
 # Important note
 
 The CSV file has the results from 100 monte carlo simulations, while the results printed at the bottom of the notebook are from a single run.
