@@ -5,8 +5,12 @@ This simulation can be used to model the spread of the corona virus through any 
 
 I have yet to make it objected oriented and I understand it's easier, but it's more important for me to create a working simulation right now.
 
+
+
 # Goal:
 Predict how the virus will spread through different regions, and how many cases should we expect?
+
+
 
 # Results of predictions (26th March to 8th April):
 
@@ -21,9 +25,13 @@ In the gif and image below, you can see the comparison between the predictions m
 
 
 
+
+
 # Important note
 
-The CSV file has the results from 100 monte carlo simulations, while the results printed at the bottom of the notebook are from a single run.
+The CSV file has the results from 100 monte carlo simulations which I used to make the visualizations above, while the results printed at the bottom of the notebook are from a single run.
+
+
 
 # Assumptions for the example below, and in general:
 - It just for Sindh's districts, no neighbouring cities on the border of sindh are involved (For the whole country's simulation, there is no international travel involved).
@@ -34,6 +42,8 @@ The CSV file has the results from 100 monte carlo simulations, while the results
 - Density = population / area
 - Density affects the rate of spread inside a city.
 - The cases are unconfirmed+confirmed cases. The lambda parameter can be changed to adjust just for the number of confirmed cases.
+
+
 
 # How to use?
 
@@ -54,6 +64,8 @@ The CSV file has the results from 100 monte carlo simulations, while the results
 - Ideally, you should run a lot of monte carlo simulations and get the 95% confidence intervals for the predictsion from the model (as show in the CSV file).
 
 
+
+
 # In a nutshell explanation (for Sindh)
 
 *I used this map as a reference for Sindh https://en.wikipedia.org/wiki/Districts_of_Sindh,_Pakistan*
@@ -72,6 +84,8 @@ The CSV file has the results from 100 monte carlo simulations, while the results
 - Subtract the number of cases from the city where the carriers/infected travelled came from.
 - Repeat this for each district
 
+
+
 # Parameters and Parameters
 
 For the function **simulate day**:
@@ -79,6 +93,8 @@ For the function **simulate day**:
 - **recovery** = Parameter to set the recovery rate for the whole simulation
 - **Effect of density** = On line 43-ish (below #Multiplier effect due to density of city), you can change the effect of a district's density by varying the parameters of the normal distribution
 - **Traffic Flow** = When you add each district, you add a traffic flow parameter between each district and its neighbours. It determines how many people travel between districts everyday.
+
+
 
 
 
